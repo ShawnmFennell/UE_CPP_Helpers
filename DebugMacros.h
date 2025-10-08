@@ -15,8 +15,8 @@
 #include "DrawDebugHelpers.h"
 
 // ============================================================================
-// DEBUG LOGGING MACROS // TEXT IS AN UNREAL SPECIFIC MACRO. NOT PART OF C++ STANDARD LIBRARY
-// FString is Unreal specific string type.
+// DEBUG LOGGING MACROS
+// 
 // ============================================================================
 
 #if UE_BUILD_DEBUG || UE_BUILD_DEVELOPMENT
@@ -151,4 +151,5 @@ namespace DebugColor
 
 // ============================================================================
 // End of DebugMacros.h
+
 // ============================================================================
