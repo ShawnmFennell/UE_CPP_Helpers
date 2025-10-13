@@ -1,0 +1,148 @@
+# ==========================================
+# Unreal Engine 5.6.1 Git Ignore Template
+# C++ Project + Git LFS + Plugin + Config Safe
+# ==========================================
+
+# Allow .gitkeep placeholders
+!.gitkeep
+
+# --- Build artifacts ---
+[Bb]inaries/
+[Ii]ntermediate/
+[Dd]erivedDataCache/
+Saved/
+Build/
+
+# --- Large Assets ---
+Content/LargeAssets/ 
+
+# --- Engine folders (installed engine) ---
+Engine/DerivedDataCache/
+Engine/Intermediate/
+Engine/Saved/
+Engine/Binaries/
+CrashReports/
+Profiling/
+
+# --- User-specific files ---
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln
+*.VC.db
+*.VC.VC.opendb
+.vs/
+.idea/
+.vscode/
+
+# --- Compiled / packaged output ---
+*.exe
+*.dll
+*.so
+*.app
+*.dylib
+*.target
+*.mod
+*.manifest
+*.lib
+*.pdb
+*.exp
+*.pak
+*.ubulk
+*.utoc
+*.ucas
+*.uprojectdirs
+
+# --- Temporary & cache files ---
+*.tmp
+*.log
+*.log1
+*.log2
+*.bak
+*.old
+*.orig
+*.dmp
+*.swp
+*.sdf
+*.opensdf
+*.tlog
+*.ipch
+*.pch
+*.obj
+*.idb
+*.opendb
+*.db
+*.rsp
+*.cache
+*.gpudatacache
+*.metasound.log
+
+# --- Unreal auto-generated data ---
+*_BuiltData.uasset
+*_BuiltData.umap
+*.generated.h
+*.generated.cpp
+*.gen.cpp
+*.gen.h
+*.dll.response
+*.response
+*.json.response
+*.generated.ini
+
+# --- AutoSave & backups ---
+Autosaves/
+Collections/
+Backup/
+__MACOSX/
+
+# --- IDE build folders ---
+.xcodeproj/
+.xcworkspace/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# PLUGINS
+# ==========================================
+# Keep plugin source, config, and content — ignore build outputs
+!Plugins/
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+Plugins/*/DerivedDataCache/
+
+# ==========================================
+# CONFIG FILES
+# ==========================================
+# Keep all project Config files
+!Config/
+!Config/**/*.ini
+
+# Keep plugin Configs
+!Plugins/**/Config/*.ini
+
+# Ignore generated configs
+Saved/Config/
+Intermediate/Config/
+Engine/Saved/Config/
+*.ini~
+*.ini.bak
+*.ini.tmp
+
+# ==========================================
+# ESSENTIAL PROJECT DIRECTORIES
+# ==========================================
+!Source/
+!Content/
+!Config/
+!Plugins/
+!*.uproject
+!*.uplugin
